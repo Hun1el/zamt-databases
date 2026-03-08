@@ -1,0 +1,16 @@
+CREATE TABLE `all_cell` (
+   `radio` varchar(10) NOT NULL,
+   `mcc` smallint unsigned NOT NULL,
+   `net` smallint unsigned NOT NULL,
+   `area` smallint unsigned NOT NULL,
+   `cell` int unsigned NOT NULL,
+   `unit` tinyint unsigned NOT NULL,
+   `lon` float NOT NULL,
+   `lat` float NOT NULL,
+   `range` mediumint unsigned NOT NULL,
+   `samples` smallint unsigned NOT NULL,
+   `changeable` tinyint NOT NULL,
+   `created` bigint unsigned NOT NULL,
+   `updated` bigint unsigned NOT NULL,
+   `averageSignal` tinyint unsigned NOT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

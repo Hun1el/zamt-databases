@@ -1,0 +1,7 @@
+/*
+	secure-file-priv
+	local_infile 
+*/
+LOAD DATA INFILE '/tmp/test.txt' INTO TABLE test
+	FIELDS TERMINATED BY ','  
+	IGNORE 1 LINES;
