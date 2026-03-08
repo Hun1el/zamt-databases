@@ -1,0 +1,24 @@
+﻿SELECT * FROM country;
+SELECT code, name, region FROM country;
+SELECT country.code AS `КОД`, country.name, country.region FROM world.country;
+SELECT DISTINCT country_code FROM city;
+SELECT city.* FROM city WHERE country_code='RUS';
+
+	SELECT id AS `Иникальный номер`, name, district, population AS `Население` 
+	FROM city 
+	WHERE population < 1000 ;
+
+SELECT * FROM city WHERE population > 1000000 AND country_code = 'RUS';
+SELECT * FROM city WHERE population BETWEEN 1000000 AND 2500000;
+SELECT * FROM world.city where name LIKE 'Gor%';
+SELECT * FROM world.city ORDER BY name;
+SELECT * FROM world.city ORDER BY name DESK;
+
+INSERT INTO city(name, country_code) VALUES('Gorodec', 'RUS')
+INSERT INTO city(name, country_code) VALUES('test3333', 'RUS'), ('test2222', 'USA')
+INSERT INTO city VALUES(null,'test2222', 'USA', 'oblast', 111111111)
+
+UPDATE
+DELETE
+
+

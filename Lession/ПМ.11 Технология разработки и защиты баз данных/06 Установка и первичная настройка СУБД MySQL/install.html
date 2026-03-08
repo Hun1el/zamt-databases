@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MySQL Installer</title>
+	<link rel="stylesheet" href="css/main.css">
+	
+	<!-- For highlight -->
+	<link rel="stylesheet" href="css/gruvbox-dark.min.css">
+
+	
+</head>
+
+<body>
+
+	<main>
+		<h1><code>MySQL Installer</code></h1>
+		<p><code>MySQL Installer</code> - это простой и удобный способ установить, а так же произвести первичную конфигурацию, СУБД <code>MySQL</code>.</p>
+		<p><a href="https://dev.mysql.com/downloads/installer/" target="_blanck">MySQL Installer</a></p>
+		<section>
+			<h2>STEP 0. Download</h2>
+			<p>Загружаем установщик с официального сайта.</p>
+			<figure>
+				<img src="img/install/install_mysql_0.jpg">
+				<figcaption>Загрузка <code>MySQL Installer</code> с официального сайта</figcaption>
+			</figure>
+			<blockquote class="warn">В действительности установщик и для x86 и для x64 архитектуры.</blockquote>
+		</section>
+		
+		<section>
+			<h2>STEP 1</h2>
+			<p>Запускаем файл установки <code>mysql-installer-community-5.7.19.0</code>. И первое что делает это соглашаемся с условиями лицензии.</p>
+			<figure>
+				<img src="img/install/install_mysql_1.jpg">
+				<figcaption>Лицензионное соглашение</figcaption>
+			</figure>
+		</section>
+		
+		<section>
+			<h2>STEP 2. Тип установки</h2>
+			<p><code>MySQL Installer</code> предоставляет следующий вид установки</p>
+			<figure>
+				<img src="img/install/install_mysql_2.jpg">
+				<figcaption>Тип установки</figcaption>
+			</figure>
+			
+			<article>
+				<h3>Developer Default</h3>
+				<p>Установка всех необходимых компонетов для разработчика.</p>
+				<ul>
+					<li>MySQL Server - система управления базой данных</li>
+					<li>MySQL Shell - новое клиентское приложение для управдения базой данных MySQL и кластерной системой InnoDB</li>
+					<li>MySQL Router - демон маршрутизации для кластерной системы InnoDB.</li>
+					<li>MySQL Workbench - инструмент для визуального проектирования баз данных.</li>
+					<li>MySQL for Excel - Excel плагин для доступа и упавления данными MySQL.</li>
+					<li>MySQL for Visual Studio</li>
+					<li>MySQL Connectors - базовые драйверы, позволяющие разработчикам создавать приложения баз данных на своем языке. </li>
+					<li>Examples and tutorials</li>
+					<li>Documentation</li>
+				</ul>
+			</article>
+			
+			<article>
+				<h3>Server only</h3>
+				<p>Установка только сервера.</p>
+			</article>
+			
+			<article>
+				<h3>Client only</h3>
+				<p>Установка только клиентской части, без сервера.</p>
+				<ul>
+					<li>MySQL Shell </li>
+					<li>MySQL Router </li>
+					<li>MySQL Workbench</li>
+					<li>MySQL for Excel </li>
+					<li>MySQL for Visual Studio</li>
+					<li>MySQL Connectors </li>
+					<li>Examples and tutorials</li>
+					<li>Documentation</li>
+				</ul>
+			</article>
+			
+			<article>
+				<h3>Full</h3>
+				<p>Полная установка всего пакета программного обеспечения.</p>
+				<blockquote class="info"><em>Installs all of the products available in this catalog including MySQL Server, MySQL Shell, MySQL Router, MySQL Workbench, MySQL Connectors, documentation, samples and examples and much more.</em></blockquote>
+			</article>
+			
+			<article>
+				<h3>Custom</h3>
+				<p>Самостоятельный выбор необходимых компонентов.</p>
+			</article>
+			
+			<figure>
+				<img src="img/install/install_mysql_3.jpg">
+				<figcaption>Выбрав необходимые компонеты жмём <em>Next</em></figcaption>
+			</figure>			
+		</section>
+		
+		<section>
+			<h2>STEP 3</h2>
+			<p>Список устанавливаемых компонентов.</p>
+			<figure>
+				<img src="img/install/install_mysql_4.jpg">
+				<figcaption>Если всё правльно жмём <em>Execute</em></figcaption>
+			</figure>
+			
+			<figure>
+				<img src="img/install/install_mysql_5.jpg">
+				<figcaption>Процесс установки, по завершению которого жмём <em>Next</em></figcaption>
+			</figure>
+		</section>
+		
+		<section>
+			<h2>STEP 4</h2>
+			<p>Настройка компонетов</p>
+			<figure>
+				<img src="img/install/install_mysql_6.jpg">
+				<figcaption>Настройка компонетов жмём <em>Next</em></figcaption>
+			</figure>
+			<p>Первым делом выбираем пункт стандартный сервер</p>
+			<figure>
+				<img src="img/install/install_mysql_7.jpg">
+				<figcaption>Настройка сервера</figcaption>
+			</figure>
+			<p>Тип сервера и его настройки оставляем без изменений</p>
+			<figure>
+				<img src="img/install/install_mysql_8.jpg">
+				<figcaption>Тип сервера</figcaption>
+			</figure>
+			<p>Необходимо ввести пароль для <em>root</em> пользователя</p>
+			<figure>
+				<img src="img/install/install_mysql_9.jpg">
+				<figcaption>Создание пользователей и пароля для <em>root</em></figcaption>
+			</figure>
+			<p>Настроить <code>MySQL</code> как службу, но не запускать при загрузки операционной системы.</p>
+			<figure>
+				<img src="img/install/install_mysql_10.jpg">
+				<figcaption>Запускать <code>MySQL</code> сервер как службу Windows</figcaption>
+			</figure>
+			<figure>
+				<img src="img/install/install_mysql_11.jpg">
+				<figcaption>Жмём <em>Next</em></figcaption>
+			</figure>
+			<p>Далее жмём <em>Execute</em> для сохранения настроек. По завершению жмём <em>Finish</em></p>
+			<figure>
+				<img src="img/install/install_mysql_12.jpg">
+				<figcaption>Применить конфигурацию</figcaption>
+			</figure>
+		</section>
+		
+		<section>
+			<h2>STEP 5</h2>
+			<p>Настройка тестовых данных</p>
+			<figure>
+				<img src="img/install/install_mysql_13.jpg">
+				<figcaption>Настройка тестовых данных</figcaption>
+			</figure>
+			<p>Подключаемся к серверу, жмем сначала <em>Check</em> затем <em>Next</em></p>
+			<figure>
+				<img src="img/install/install_mysql_14.jpg">
+				<figcaption>Настройка тестовых данных</figcaption>
+			</figure>
+			<figure>
+				<img src="img/install/install_mysql_15.jpg">
+				<figcaption>Настройка тестовых данных</figcaption>
+			</figure>
+			
+		</section>
+		
+		<section>
+			<h2>STEP 6</h2>
+			<p>Всё, установка практически завершена, жмем <em>Next</em></p>
+			<figure>
+				<img src="img/install/install_mysql_16.jpg">
+				<figcaption>Завершение установки</figcaption>
+			</figure>
+			<p>А затем <em>Finish</em>, если оставить галку <em>Start MySQL Workbench after Setup</em> то сразу запустится программа MySQL Workbench</p>
+			<figure>
+				<img src="img/install/install_mysql_17.jpg">
+				<figcaption>Завершение установки</figcaption>
+			</figure>
+		</section>
+
+	</main>
+	
+	<!-- Load library highlight -->
+	<script src="lib/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>

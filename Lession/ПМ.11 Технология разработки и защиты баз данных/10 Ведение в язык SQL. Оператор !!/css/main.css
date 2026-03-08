@@ -1,0 +1,193 @@
+html {
+	font-size: 25px;
+}
+
+body {
+	min-width: 800px;
+	width: 100%;
+	max-width: 1024px;
+	margin: auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	counter-reset: table-count; /* for table caption*/
+}
+
+main {
+	margin: 25px 25px;
+	counter-reset: img-count;/*numeric image*/
+}
+
+a {
+	font-family: Helvetica;
+}
+
+a[href^="https://"]:before, 
+a[href^="http://"]:before {
+	content: url(../img/hyperlink.png);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+a[href^="example/"]:before {
+	content: url(../img/sample.png);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+h1 { font-size: 2.5rem; }
+
+h2 {
+	border-bottom: thin solid #000;
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	padding: 10px 0px 0px 1.5rem;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	/*background-color: rgba(200,200,200, 0.5);/**/
+}
+
+h4 { padding-left: 2rem; }
+
+
+p {
+	text-align: justify;
+}
+
+p img { width: 15%; }
+
+
+dl {
+	column-count: 2;
+}
+
+
+blockquote {
+	text-align: justify;
+}
+
+pre {
+	margin: 0 auto;
+}
+
+
+/* TABLE ALL */
+table caption:before {
+	content: "Таб. " counter(table-count) " ";
+	counter-increment: table-count;	
+}
+
+table { margin: auto; width: 95%; border-collapse: collapse;}
+th, td { padding: 10px; border: thin solid rgba(0,0,0, 0.3); }
+/* *TABLE ALL */
+
+/* FIGURE */
+figure {
+	margin: auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+figure img {
+	width: auto;
+	max-width: 95%;
+}
+
+figcaption {
+	color: #666;
+	/*text-transform: uppercase;*/
+}
+
+figcaption:before {
+	content: "Рис. ";
+	content: "Рис. " counter(img-count) " ";/**/
+	counter-increment: img-count;/**/
+}
+/* *FIGURE*/
+
+/* BLOCKQUOTE */
+blockquote {
+	border-left: 4px solid #bbb;
+	padding-left: 10px;
+}
+
+blockquote.old , blockquote.error{
+	background-color: rgba(255, 0,0, 0.3);
+	border-left: 4px solid #f00;
+	padding: 5px;
+}
+
+blockquote.warn {
+	background-color: rgba(255, 185,0, 0.3);
+	border-left: 4px solid #ffb900;
+	padding: 5px 5px 5px 15px;
+}
+
+blockquote.info {
+	background-color: rgba(127,187,0, 0.3);
+	border-left: 4px solid #7fbb00;
+	padding: 5px 5px 5px 15px;
+	margin-top: 40px;
+}
+
+/* *BLOCKQUOTE*/
+
+/* TABLE TABLE_PHP */
+.table-php th {
+	background-color: #c4c9df;
+	text-align: center;
+}
+
+.table-php tr td:first-child{ font-family: monospace; }
+
+.table-php tr:hover { background-color: #eee; }
+/* *TABLE TABLE_PHP */
+
+/* TABLE SYNTAX, TR BRACKET */
+table.syntax  tr, table.syntax  td { border: none; }
+
+table.syntax {
+	border-collapse: separate;
+	border-spacing: 10px;
+	width: auto;
+}
+
+table.syntax tr:first-child { font-family: monospace; }
+
+tr.bracket td {
+	border: 2px solid #000;
+	border-top: none;
+}
+/* *TABLE SYNTAX, TR BRACKET */
+
+/* TABLE OPERATION */
+.operation th {
+	background-color: #c4c9df;
+	text-align: left;
+	padding-left: 1rem;
+}
+
+.operation tr td:first-child{ font-family: monospace; }
+
+table.operation[class*="hover"] tr:hover { background-color: rgba(196,201,223,0.5); }
+/* *TABLE OPERATION */
+
+/* TABLE TYPE */ 
+table.type thead tr{ background-color: #c4c9df;}
+
+.type tr:hover { background-color: rgba(142,192,108,0.5); }
+.type tr:hover > th { background-color: #8ec06c; }
+
+/* *TABLE TYPE */ 
+
+/* TABLE EXAMPLE */
+.example th {
+	background-color: #eb6651;
+	font-family: monospace;
+}
+/* *TABLE EXAMPLE */
+
+
+
