@@ -1,0 +1,9 @@
+CREATE TABLE `PR08_Solonikov`.`Teacher` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `surname` VARCHAR(50) NOT NULL,
+  `firstname` VARCHAR(50) NOT NULL,
+  `middlename` VARCHAR(50) NULL,
+  `phone` VARCHAR(11) NOT NULL,
+  `expirience` INT(2) NOT NULL,
+  `subject` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id`));
